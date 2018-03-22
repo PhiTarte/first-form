@@ -23,6 +23,8 @@
         }
         output.innerHTML = `Hello ${wilder.firstName}, you're playing with ${wilder.preferredGame}`
         const button=document.createElement("input")
+        const hr=document.createElement("hr")
+        const hrAjout = output.appendChild(hr)
         const buttonAjout=output.appendChild(button)
         buttonAjout.setAttribute("value","contenu du bouton")
     </script>
