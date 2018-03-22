@@ -16,6 +16,7 @@
     <script>
         //document represente le document affiché par le navigateur
         const output = document.getElementById("output")
+        const title = document.getElementsByTagName("title")
         console.log(output)
         const wilder = {
             firstName: "Phil",
@@ -28,6 +29,7 @@
         const buttonAjout=output.appendChild(button)
         buttonAjout.setAttribute("value","contenu du bouton")
         buttonAjout.setAttribute("type","button")
+        title.innerHTML = "texte et bouton"
     </script>
   </body>
 </html>
