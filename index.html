@@ -18,10 +18,13 @@
         const output = document.getElementById("output")
         console.log(output)
         const wilder = {
-            firstName: "Ana",
-            preferredGame: "Zelda"
+            firstName: "Phil",
+            preferredGame: "Oblivion"
         }
-        output.innerHTML = "Hello"
+        output.innerHTML = `Hello ${wilder.firstName}, you're playing with ${wilder.preferredGame}`
+        const button=document.createElement("input")
+        const buttonAjout=output.appendChild(button)
+        buttonAjout.setAttribute("value","contenu du bouton")
     </script>
   </body>
 </html>
