@@ -1,35 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div id='output'></div>
-
-    <script>
-        //document represente le document affiché par le navigateur
-        const output = document.getElementById("output")
-        const title = document.getElementsByTagName("title")
-        console.log(output)
-        const wilder = {
-            firstName: "Phil",
-            preferredGame: "Oblivion"
-        }
-        output.innerHTML = `Hello ${wilder.firstName}, you're playing with ${wilder.preferredGame}`
-        const button=document.createElement("input")
-        const hr=document.createElement("hr")
-        const hrAjout = output.appendChild(hr)
-        const buttonAjout=output.appendChild(button)
-        buttonAjout.setAttribute("value","contenu du bouton")
-        buttonAjout.setAttribute("type","button")
-        title[0].innerHTML = "texte et bouton"
-    </script>
-  </body>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>First form</title>
+    </head>
+    <body>
+        <form id="myForm">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" id="nameArea" placeholder="Name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="gameArea" placeholder="Game">
+                </div>
+            </div>
+            <input type="button" value="Ok" id="buttonOk">
+        </form>
+        <script src="code.js"></script>
+    </body>
 </html>
